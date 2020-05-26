@@ -25,6 +25,8 @@ body{
     height: 80px;
     background-color: rgb(7, 7, 36);
     color: white;
+    position: sticky;
+    top: 0;
 }
 .header > div{
     margin: 0 15px;
