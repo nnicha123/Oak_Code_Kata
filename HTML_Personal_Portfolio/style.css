@@ -47,7 +47,7 @@ body{
     padding-top: 50px;
     background-color: rgb(63, 63, 119);
     height: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 150px;
 }
 #projects h2{
     color: white;
@@ -74,8 +74,35 @@ body{
     text-align: center;
 }
 .showAll{
-    background-color: rgb(31, 31, 58);
     text-decoration: none;
+}
+#footer{
+    background-color: rgb(31, 31, 58);
     color: white;
     padding: 20px 40px;
+}
+.footer{
+    padding: 60px 0;
+    background-color: rgb(31, 31, 58);
+    text-align: center;
+    color: white;
+}
+.footer h2{
+    font-size: 65px;
+}
+.footer-icons >span{
+    margin: 10px;
+}
+.footer-icons{
+    margin: 20px;
+}
+.footer{
+    border-bottom: 5px solid rgb(148, 28, 28);
+}
+.end{
+    padding: 20px;
+    display: flex;
+}
+.end div{
+    margin: 30px;
 }
