@@ -75,6 +75,9 @@ body{
 }
 .showAll{
     text-decoration: none;
+    color: white;
+    background-color:  rgb(31, 31, 58);
+    padding: 10px 25px;
 }
 #footer{
     background-color: rgb(31, 31, 58);
@@ -105,4 +108,14 @@ body{
 }
 .end div{
     margin: 30px;
+}
+.showCondition{
+    color: rgb(255, 123, 0);
+    display:none;
+}
+.card:hover .showCondition{
+    display: inline-block;
+}
+.card:hover {
+    cursor: pointer;
 }
