@@ -70,3 +70,11 @@ p{
 .content-card h5{
     margin-bottom: 0;
 }
+.sponsor-item{
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 1px solid rgb(194, 188, 188);
+}
+.sponsor-item h5{
+    margin-top: 15px;
+}
