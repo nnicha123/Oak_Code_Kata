@@ -26,3 +26,39 @@
 p{
     font-size: 13px;
 }
+
+.debate-wrapper{
+    border-bottom: 3px solid rgb(0, 119, 255);
+}
+.debate-wrapper h5{
+    border-bottom: 3px solid red;
+}
+.vs{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.vs::before{
+    content: "";
+    height: 3px;
+    width: 130px;
+    border: 0.2px solid black;
+    position: absolute;
+    right: 30px;
+}
+.vs::after{
+    content: "";
+    height: 3px;
+    width: 130px;
+    border: 0.2px solid black;
+    position: absolute;
+    left: 30px;
+}
