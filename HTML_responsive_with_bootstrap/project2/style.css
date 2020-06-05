@@ -78,3 +78,13 @@ p{
 .sponsor-item h5{
     margin-top: 15px;
 }
+.content-left{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+/* .content-middle{
+    position: -webkit-sticky; /* Safari 
+    position: sticky;
+    top: 200px;
+} */
