@@ -111,3 +111,11 @@ p{
     color: red;
     font-weight: bold;
 }
+.editor-items h5{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.editor{
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
