@@ -1,0 +1,22 @@
+.topics{
+    list-style-type: none;
+    display: flex;
+    background-color: rgb(233, 231, 231);
+    box-sizing: border-box;
+}
+.topics li{
+    padding: 2px 3px;
+    margin: 10px 5px;
+    border-right: 1px solid grey;
+}
+.content-card{
+    margin: 10px;
+    height: max-content;
+}
+.content-card > * {
+    padding: 10px;
+}
+.content-card img{
+    width: 100%;
+    margin: 0 auto;
+}
