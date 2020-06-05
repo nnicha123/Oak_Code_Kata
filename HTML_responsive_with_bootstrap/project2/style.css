@@ -28,6 +28,7 @@ p{
 }
 
 .debate-wrapper{
+    padding-bottom: 20px;
     border-bottom: 3px solid rgb(0, 119, 255);
 }
 .debate-wrapper h5{
@@ -65,4 +66,7 @@ p{
 .opinion-item{
     margin-top: 20px;
     border-bottom: 1px solid grey;
+}
+.content-card h5{
+    margin-bottom: 0;
 }
