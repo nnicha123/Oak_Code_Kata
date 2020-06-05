@@ -62,3 +62,7 @@ p{
     position: absolute;
     left: 30px;
 }
+.opinion-item{
+    margin-top: 20px;
+    border-bottom: 1px solid grey;
+}
