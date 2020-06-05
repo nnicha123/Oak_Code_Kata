@@ -81,10 +81,21 @@ p{
 .content-left{
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
+    width: auto;
+    height: 3950px;
+    top: 0px;
 }
-/* .content-middle{
-    position: -webkit-sticky; /* Safari 
+.content-middle{
+    position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 200px;
-} */
+    width: auto;
+    height: 2750px;
+    top: 0px;
+}
+.content-right{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0px;
+    width: auto;
+    height: 3400px;
+}
