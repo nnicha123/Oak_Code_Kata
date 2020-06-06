@@ -143,11 +143,12 @@ p{
 }
 .subscribe-sub-items{
     margin: 10px 10px 10px 0;
-    padding: 25px;
+    padding: 01rem;
     background-color: rgb(218, 218, 218);
 }
 .newsletter-sub-items{
     border: 1px solid rgb(218, 218, 218);
+    padding: 0.7rem;
     margin: 10px 10px 10px 0;
 }
 .news-sub{
@@ -159,4 +160,8 @@ p{
     background-color: red;
     color: white;
     border: none;
+}
+.section-footer{
+    border-top: 1px solid rgb(228, 225, 225);
+    border-bottom: 1px solid rgb(228, 225, 225);
 }
