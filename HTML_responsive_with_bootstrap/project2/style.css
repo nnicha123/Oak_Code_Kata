@@ -165,3 +165,16 @@ p{
     border-top: 1px solid rgb(228, 225, 225);
     border-bottom: 1px solid rgb(228, 225, 225);
 }
+.language-list{
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.language-list li p{
+    margin-bottom: 0;
+}
+.language-list li{
+    padding: 0 10px;
+    margin: 5px;
+    border-right: 1px solid grey;
+}
