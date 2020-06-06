@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsweek</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-wrapper" style="color: white;background: white;height: max-content;">
+        <div class="header d-flex justify-content-between align-items-center p-3" style="background-color: red;">
+            <div class="head-left">
+                <div class="weather">
+                    <span>
+                        <i class="fa fa-sun-o" aria-hidden="true"></i>
+                        <span>Bangkok, TH</span>
+                    </span>
+                </div>
+                <div class="date">Thu, Jun 04, 2020</div>
+            </div>
+            <div class="head-middle">
+                <h1>Newsweek</h1>
+            </div>
+            <div class="head-right d-flex">
+                <div class="login p-2 mr-2">LOGIN</div>
+                <div class="subscribe p-2 pl-4 pr-4"
+                    style="background-color: rgb(255, 187, 0);color: black;font-weight: bold;border-radius: 20px;">
+                    SUBSCRIBE</div>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom"></div>
+            <ul class="topics p-0" style="color: black;font-weight: bold;">
+                <li class="pl-3">U.S.</li>
+                <li>World</li>
+                <li>Business</li>
+                <li>Tech & Science</li>
+                <li>Culture</li>
+                <li>Newsgeek</li>
+                <li>Sports</li>
+                <li>Health</li>
+                <li>The Debate</li>
+                <li>Vantage</li>
+                <li>Weather</li>
+                <li><input type="text" placeholder="Search" style="border: none;"><i class="fa fa-search"
+                        aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row pt-3">
+            <div class="col-md-3 content-left">
+                <h5>FEATURED STORIES</h5>
+                <div class="content-card">
+                    <img src="featured-1.PNG" class="img-fluid">
+                    <h5>The 'Law and Order' Message Donald Trump Campaigned on May Not Work in 2020</h5>
+                    <p>With cities across the country seeing mass protests against police brutality, President Donald
+                        Trump wants a "law and order" narrative.</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-2.PNG" class="img-fluid">
+                    <h5>What George Floyd Protestors Want in Order to End Demonstrations</h5>
+                    <p>One Minneapolis group sent Newsweek an unpublished, 19-page document with recommendations,
+                        including requiring police to carry their own professional liability insurance, robust civilian
+                        oversight of police, and a disciplinary reset mechanism.</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-3.PNG" class="img-fluid">
+                    <h5>We Didn't Need the Insurrection Act After Katrina and Don't Need It Now</h5>
+                    <p>Washington, always one step behind reality, couldn't hear what its own commander on the ground
+                        was saying: We don't need to federalize the National Guard.</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-4.PNG" class="img-fluid">
+                    <h5>Police Officers Kneel as Hearse Carrying George Floyd's Body Passes</h5>
+                    <p>Three officers charged with playing a role in Floyd's death are expected to appear in court as
+                        Floyd's family and friends gather to pay their final respects.</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-5.PNG" class="img-fluid">
+                    <h5>Paul Stalls Anti-Lynching Bill As Lawmakers Plead For Racial Healing</h5>
+                    <p>"Let us pass this piece of legislation today of all days. Let's give a headline tomorrow or
+                        something that will give hope to this country that we can get it right," Senator Cory Booker
+                        said.</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-6.PNG" class="img-fluid">
+                    <h5>What Sets the Leading Liberal Arts Schools Apart?</h5>
+                    <p>There are a number of great Liberal Arts Schools in the USA today, but what qualities do the best
+                        of them have?</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-7.PNG" class="img-fluid">
+                    <h5>Want to Learn to Code Online?</h5>
+                    <p>If you are thinking about changing career or you have recently lost your job, this might be the
+                        time to think about a career in coding.</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-8.PNG" class="img-fluid">
+                    <h5>What is an IB Private Education and Why is it so Important?</h5>
+                    <p>The aim of the IB is to offer the best possible international education for students of all
+                        backgrounds and from every part of the world. Find out more.</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-9.PNG" class="img-fluid">
+                    <h5>Newsweek AMPLIFY Launches Strategic Partnership Solutions for Brands</h5>
+                    <p>Newsweek AMPLIFY, the company's performance marketing business unit, has launched a new program
+                        to empower digital brands with comprehensive content marketing and advertising strategies.</p>
+                </div>
+                <div class="content-card">
+                    <img src="featured-10.PNG" class="img-fluid">
+                    <h5>Best Physical Rehab Centers</h5>
+                    <p>Newsweek is partnering with the respected global data research firm Statista Inc. to establish a
+                        ranking of Best Physical Rehabilitation Centers in the United States 2020. If you work in this
+                        field, please participate in our survey.</p>
+                </div>
+            </div>
+            <div class="col-md-6 content-middle">
+                <div class="top-story">
+                    <h5>TOP STORY</h5>
+                    <img src="top-story.PNG" class="img-fluid">
+                    <h5 class="mt-2">Jamel Floyd 'Murdered' By Mace Since Guards Knew He Had Asthma, Mother Says</h5>
+                    <p>"He had underlying medical conditions they were aware of," Jamel Floyd's mother, Donna Mays, said
+                        Thursday.</p>
+                </div>
+                <div class="heros-section">
+                    <h6>HEROS OF THE PANDEMIC</h6>
+                    <div class="row heros">
+                        <div class="col-md-4 hero-items">
+                            <img src="heros.PNG" class="img-fluid">
+                            <p>The Doctors and Nurses Crossing the Border Daily to Help Asylum Seekers</p>
+                        </div>
+                        <div class="col-md-4 hero-items">
+                            <img src="heros-2.PNG" class="img-fluid">
+                            <p>The Charity Helping Vulnerable Holocaust Survivors During the Pandemic</p>
+                        </div>
+                        <div class="col-md-4 hero-items">
+                            <img src="heros-3.PNG" class="img-fluid">
+                            <p>Women Launch Campaign Urging People to Donate Their Stimulus Checks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="culture-section">
+                    <h6>CULTURE & TRAVEL</h6>
+                    <div class="row heros">
+                        <div class="col-md-4 hero-items">
+                            <img src="culture-1.PNG" class="img-fluid">
+                            <p>Black Lives Matter Protests Around the World, in Photos</p>
+                        </div>
+                        <div class="col-md-4 hero-items">
+                            <img src="culture-2.PNG" class="img-fluid">
+                            <p>Artists on the Internet are Honoring George Floyd With Striking Portraits</p>
+                        </div>
+                        <div class="col-md-4 hero-items">
+                            <img src="culture-3.PNG" class="img-fluid">
+                            <p>Tall Ship Sails 10,000 Miles From the End of the World During COVID-19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stories">
+                    <h6>MORE STORIES</h6>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3" style="border-top: 1px solid rgb(221, 216, 216);">
+                        <div class="col-md-3">
+                            <img src="story-1.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>Dr. Fauci Says COVID-19 Vaccine to Be Manufactured Before Knowing It Works</h6>
+                            <p>The effectiveness of a vaccine will hopefully be confirmed by late fall or early winter,
+                                Dr. Anthony Fauci tells Newsweek.</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-2.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>State and City Lawmakers Propose Legislation to Ban Use of Tear Gas</h6>
+                            <p>Several state lawmakers and city council members from across the U.S. have proposed
+                                legislation to ban the use of tear gas by law enforcement, following mass protests for
+                                George Floyd.</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-3.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>CDC Director 'Concerned' COVID-19 Warnings Aren't Sticking in U.S.</h6>
+                            <p>"We ask the American public to be vigilant," CDC Director Robert Redfield said during a
+                                hearing with congressional leaders Thursday.</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-4.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>First-Degree Murder Charge Would Likely Acquit Derek Chauvin, Experts Say</h6>
+                            <p>"There has never been one conviction of any white officer in the history of this entire
+                                state for killing an African American resident. Not one in the couple hundred years this
+                                state has been in existence," an organizer said.</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-5.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>Alabama Lawmakers Call for End to Commemorating Jefferson Davis' Birthday</h6>
+                            <p>"We should not give Davis, a traitor and racist who lived in our state for less than a
+                                year, his own state holiday," Alabama State Representative Chris England wrote Thursday.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-6.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>U.S. Gun Sales Spike Amid Pandemic and Protests</h6>
+                            <p>Data compiled by the FBI in 2020 has indicated that demand for firearms is significantly
+                                higher this year compared to 2019.</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-7.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>Racism, Police Killings and Riots. This was America in 1967—and in 2020.</h6>
+                            <p>In 1967, black households earned 55 percent of what white households earned. In 2014, it
+                                was 61 percent. At that rate of improvement, black household incomes should catch up in
+                                2410—maybe.</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-8.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>Louisville Cops Walk Out on Mayor Over Frustrations About His Leadership</h6>
+                            <p>Mayor Greg Fischer said in a statement that he understands their actions and it does not
+                                change his appreciation for the police force.</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-9.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>On Tiananmen Anniversary, Hong Kong Protesters Brace for Chinese Crackdown</h6>
+                            <p>China has gobbled up the territory's freedom, undeterred by protests and international
+                                condemnation. Who's next?</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-10.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>Investigator: Travis McMichael Called Arbery Racial Slur After Shooting</h6>
+                            <p>Travis McMichael and Gregory McMichael, a son and father, are charged with the murder and
+                                aggravated assault of Arbery. Arbery died while out jogging in Brunswick, Georgia in
+                                February.</p>
+                        </div>
+                    </div>
+                    <div class="row story-item d-flex align-items-start pt-3 pb-3">
+                        <div class="col-md-3">
+                            <img src="story-11.PNG" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>After NYC Cop Stabbed in Neck, Two Shot, Union Blames Anti-Police Rhetoric</h6>
+                            <p>Three New York City police officers were injured by a civilian Wednesday night while
+                                assigned to patrol a Brooklyn neighborhood for potential looting, according to NYPD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 content-right">
+                <div class="debate-wrapper">
+                    <h5 class="mb-3 pb-2">THE DEBATE</h5>
+                    <div class="row the-debate d-flex align-items-start">
+                        <div class="col-md-4">
+                            <img data-src="https://d.newsweek.com/en/full/1596838/eugene-kontorovich.png?w=150&amp;h=150&amp;f=814307c1a56b61776f2e6954a2ec2cdd"
+                                alt="Eugene Kontorovich" title="Eugene Kontorovich"
+                                src="https://d.newsweek.com/en/full/1596838/eugene-kontorovich.png?w=150&amp;h=150&amp;f=814307c1a56b61776f2e6954a2ec2cdd"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Governors Can't Pick and Choose Constitutional Rights</p>
+                            <p>BY <span style="font-weight: bold;">EUGENE KONTOROVICH</span></p>
+                        </div>
+                    </div>
+                    <div class="vs">
+                        VS
+                    </div>
+                    <div class="row the-debate d-flex align-items-start">
+                        <div class="col-md-8">
+                            <p>Pandemic Constitutional Rights: Not an All-Or-Nothing Proposition</p>
+                            <p>BY <span style="font-weight: bold;">MICHELE GOODWIN</span></p>
+                        </div>
+                        <div class="col-md-4">
+                            <img data-src="https://d.newsweek.com/en/full/1596837/michele-goodwin.png?w=150&amp;h=150&amp;f=1ca7b38fdf287cb9199f0c5b38479324"
+                                alt="Michele Goodwin" title="Michele Goodwin"
+                                src="https://d.newsweek.com/en/full/1596837/michele-goodwin.png?w=150&amp;h=150&amp;f=1ca7b38fdf287cb9199f0c5b38479324"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="opinion-wrapper">
+                    <h5 class="mt-3 mb-3 pb-2">OPINION</h5>
+                    <div class="row opinion-item d-flex align-items-start">
+                        <div class="col-md-4">
+                            <img data-src="https://d.newsweek.com/en/full/1596647/mark-mccoy.png?w=63&amp;h=63&amp;f=8454003e4eb4c1138503649f63f27f10"
+                                alt="Mark McCoy" title="Mark McCoy"
+                                src="https://d.newsweek.com/en/full/1596647/mark-mccoy.png?w=63&amp;h=63&amp;f=8454003e4eb4c1138503649f63f27f10"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>I Was Arrested for Same as George Floyd. I Lived. That's White Privilege</p>
+                            <p>BY <span style="font-weight: bold;">MARK MCCOY</span></p>
+                        </div>
+                    </div>
+                    <div class="row opinion-item d-flex align-items-start">
+                        <div class="col-md-4">
+                            <img data-src="https://d.newsweek.com/en/full/1590132/john-yoo-robert-delahunty.png?w=63&amp;h=63&amp;f=9ca0e1ebe50ee1c76070df82a1d93c4e"
+                                alt="John Yoo and Robert Delahunty" title="John Yoo and Robert Delahunty"
+                                src="https://d.newsweek.com/en/full/1590132/john-yoo-robert-delahunty.png?w=63&amp;h=63&amp;f=9ca0e1ebe50ee1c76070df82a1d93c4e"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Domestic Military Use Is Lawful but Not Yet Prudent</p>
+                            <p>BY <span style="font-weight: bold;">JOHN YOO AND ROBERT DELAHUNTY</span></p>
+                        </div>
+                    </div>
+                    <div class="row opinion-item d-flex align-items-start">
+                        <div class="col-md-4">
+                            <img data-src="https://d.newsweek.com/en/full/1569714/ann-olivarius.png?w=63&amp;h=63&amp;f=196f18f60e3ebd1011362fb69514f1ac"
+                                alt="Ann Olivarius " title="Ann Olivarius "
+                                src="https://d.newsweek.com/en/full/1569714/ann-olivarius.png?w=63&amp;h=63&amp;f=196f18f60e3ebd1011362fb69514f1ac"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Trump's Reasons for Targeting Social Media Are Wrong. But It's Right to Do</p>
+                            <p>BY <span style="font-weight: bold;">ANN OLIVARIUS</span></p>
+                        </div>
+                    </div>
+                    <div class="row opinion-item d-flex align-items-start">
+                        <div class="col-md-4">
+                            <img data-src="https://d.newsweek.com/en/full/1524161/anna-wang.png?w=63&amp;h=63&amp;f=1d5a2d57d056af1fdac35233dbde6daf"
+                                alt="Anna Wang" title="Anna Wang"
+                                src="https://d.newsweek.com/en/full/1524161/anna-wang.png?w=63&amp;h=63&amp;f=1d5a2d57d056af1fdac35233dbde6daf"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>I Witnessed Tiananmen Square. COVID-19 Makes Me Fear for China Even More</p>
+                            <p>BY <span style="font-weight: bold;">ANNA WANG</span></p>
+                        </div>
+                    </div>
+                    <div class="row opinion-item d-flex align-items-start">
+                        <div class="col-md-4">
+                            <img data-src="https://d.newsweek.com/en/full/1596142/daniel-pipes.png?w=63&amp;h=63&amp;f=85422f65f1e44f2923bc383c4cca3f55"
+                                alt="Daniel Pipes" title="Daniel Pipes"
+                                src="https://d.newsweek.com/en/full/1596142/daniel-pipes.png?w=63&amp;h=63&amp;f=85422f65f1e44f2923bc383c4cca3f55"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>A Reluctant but Unhesitating Vote for Donald Trump</p>
+                            <p>BY <span style="font-weight: bold;">DANIEL PIPES</span></p>
+                        </div>
+                    </div>
+                    <div class="row opinion-item d-flex align-items-start">
+                        <div class="col-md-4">
+                            <img data-src="https://d.newsweek.com/en/full/1596080/barbara-bollier.png?w=63&amp;h=63&amp;f=fb2437a92c8e6efc01b80b66bf77c43e"
+                                alt="Barbara Bollier " title="Barbara Bollier "
+                                src="https://d.newsweek.com/en/full/1596080/barbara-bollier.png?w=63&amp;h=63&amp;f=fb2437a92c8e6efc01b80b66bf77c43e"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>I'm a Kansas Lawmaker and Doctor. Wearing a Mask Isn't About Politics</p>
+                            <p>BY <span style="font-weight: bold;">BARBARA BOLLIER</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor-wrapper mt-3">
+                    <div class="col-md-12 sponsor-item">
+                        <img src="sponsor-1.PNG" class="img-fluid">
+                        <h5>Looking for a Powerful, Lightweight and Long-lasting Cordless Vacuum?</h5>
+                        <p>Roborock H6, 2020 Red Dot Award Winner, Ultra-Long lasting LiPo battery, available now on
+                            Amazon.</p>
+                    </div>
+                    <div class="col-md-12 sponsor-item">
+                        <img src="sponsor-2.PNG" class="img-fluid">
+                    </div>
+                    <div class="col-md-12 sponsor-item">
+                        <img src="sponsor-3.PNG" class="img-fluid">
+                        <h5>What Qualities Make a Leading University?</h5>
+                        <p>A Leading University has to have a track record of producing well qualified, gifted and
+                            employable candidates. Which schools earn the accolade?</p>
+                    </div>
+                    <div class="col-md-12 sponsor-item">
+                        <img src="sponsor-4.PNG" class="img-fluid">
+                        <h5>Newsweek Special Edition: Food as Medicine</h5>
+                        <p>Humans have been using natural remedies like spices and herbs to heal common ailments for
+                            centuries. Now food science is proving many of those traditions true and innovating new ways
+                            to heal our bodies from the inside out. Discover the power of plant-based nutrition with
+                            this Newsweek Special Edition and start your journey to a healthier you.</p>
+                    </div>
+                    <div class="col-md-12 sponsor-item">
+                        <img src="sponsor-5.PNG" class="img-fluid">
+                        <h5>Best Infection Prevention Products</h5>
+                        <p>During the coronavirus outbreak, health care is more important than ever. In Newsweek's first
+                            Best Health Care series, we highlight the best infection prevention products.</p>
+                    </div>
+                    <div class="col-md-12 sponsor-item">
+                        <img src="sponsor-6.PNG" class="img-fluid">
+                        <h5>Best Addiction Treatment Centers</h5>
+                        <p>Newsweek and Statista are partnering to establish a ranking of Best Addiction Treatment
+                            Centers in the United States. If you work in this field, this survey is for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo d-flex justify-content-center align-items-center mb-2 pb-3">
+            <img src="logo.png" alt="">
+            <span class="ml-2">IN THE MAGAZINE</span>
+        </div>
+
+        <div class="row magazine">
+            <div class="col-md-3 magazine-items mt-3">
+                <img src="magazine-1.PNG" alt="" class="img-fluid">
+                <button class="see-features" style="width: 100%;height:auto;">SEE ALL FEATURES</button>
+            </div>
+            <div class="col-md-3 magazine-items mt-3">
+                <img src="magazine-2.PNG" alt="" class="img-fluid">
+                <div class="magazine-sub  ml-0 mr-2 mt-2 mb-2 d-flex">
+                    <div class="sub-left mr-2 p-2">
+                        COVER
+                    </div>
+                    <div class="sub-right p-2">
+                        POLITICS
+                    </div>
+                </div>
+                <h5>Biden, the Moderate, Plans the Most Radical Economic Overhaul Since FDR</h5>
+            </div>
+            <div class="col-md-3 magazine-items mt-3">
+                <img src="magazine-3.PNG" alt="" class="img-fluid">
+                <div class="magazine-sub  ml-0 mr-2 mt-2 mb-2 d-flex">
+                    <div class="sub-left mr-2 p-2">
+                        FEATURES
+                    </div>
+                    <div class="sub-right p-2">
+                        HEALTH
+                    </div>
+                </div>
+                <h5>Mental Health Toll of Coronavirus Could Rival that of the Disease Itself</h5>
+            </div>
+            <div class="col-md-3 magazine-items mt-3">
+                <img src="magazine-4.PNG" alt="" class="img-fluid">
+                <div class="magazine-sub  ml-0 mr-2 mt-2 mb-2 d-flex">
+                    <div class="sub-left mr-2 p-2">
+                        PERISCOPE
+                    </div>
+                    <div class="sub-right p-2">
+                        HEALTH
+                    </div>
+                </div>
+                <h5>Contact Tracing Won't Solve the Coronavirus Crisis: Epidemiologist</h5>
+            </div>
+        </div>
+        <div class="row magazine" style="position: relative;">
+            <div class="col-md-3 magazine-items mt-3">
+                <img src="magazine-5.PNG" alt="" class="img-fluid">
+                <div class="magazine-sub  ml-0 mr-2 mt-2 mb-2 d-flex">
+                    <div class="sub-left mr-2 p-2">
+                        FEATURES
+                    </div>
+                    <div class="sub-right p-2">
+                        CULTURE
+                    </div>
+                </div>
+                <h5>Comedian Goes Viral Miming Trump</h5>
+            </div>
+            <div class="col-md-3 magazine-items mt-3">
+                <img src="magazine-6.PNG" alt="" class="img-fluid">
+                <div class="magazine-sub  ml-0 mr-2 mt-2 mb-2 d-flex">
+                    <div class="sub-left mr-2 p-2">
+                        DOWNTIME
+                    </div>
+                    <div class="sub-right p-2">
+                        CULTURE
+                    </div>
+                </div>
+                <h5>Miss Manners' Etiquette Lessons for Contagious TimesR</h5>
+            </div>
+            <div class="col-md-3 magazine-items mt-3">
+                <img src="magazine-7.PNG" alt="" class="img-fluid">
+                <div class="magazine-sub  ml-0 mr-2 mt-2 mb-2 d-flex">
+                    <div class="sub-left mr-2 p-2">
+                        DOWNTIME
+                    </div>
+                    <div class="sub-right p-2">
+                        CULTURE
+                    </div>
+                </div>
+                <h5>Lisa Kudrow on Netflix's 'Space Force' and the 'Friends' Reunion Special</h5>
+            </div>
+            <div class="col-md-3 magazine-items mt-3">
+                <img src="magazine-8.PNG" alt="" class="img-fluid">
+                <h5 class="mt-3">GROUND ZERO</h5>
+            </div>
+        </div>
+        <div class="logo d-flex justify-content-center align-items-center mt-5 mb-2 pb-3">
+            <img src="logo.png" alt="">
+            <span class="ml-2">EDITOR'S PICK</span>
+        </div>
+        <div class="row editor">
+            <div class="col-md-3 editor-items">
+                <img src="editor-1.PNG" class="img-fluid">
+                <h5>'In Searching for Dead ISIS Fighters in Iraq, I Found Refuge in My Friends'</h5>
+                <p>Along the road I am always looking ahead, wondering whether each crumpled piece of trash is hiding a
+                    roadside bomb. I realize that were we to hit a landmine, it is likely that my bulletproof vest or
+                    helmet would not save me.</p>
+            </div>
+            <div class="col-md-3 editor-items">
+                <img src="editor-2.PNG" class="img-fluid">
+                <h5>Yellowstone Volcano's Biggest Ever Super-Eruption Discovered</h5>
+                <p>The eruption was so big it covered an area the size of New Jersey in volcanic glass.</p>
+            </div>
+            <div class="col-md-3 editor-items">
+                <img src="editor-3.PNG" class="img-fluid">
+                <h5>Los Angeles Dodgers Lit Up Their Stadium to Honor George Floyd</h5>
+                <p>The lights at Dodger Stadium were shone into the sky for 8 minutes and 46 seconds, the time
+                    Minneapolis Police Department officer Derek Chauvin knelt on Floyd's neck.</p>
+            </div>
+            <div class="col-md-3 editor-items">
+                <img src="editor-4.PNG" class="img-fluid">
+                <h5>MLK's Daughter Tells Brees Only Kind of Kneeling He Should Be Bothered By</h5>
+                <p>The New Orleans Saints QB has been widely criticized for suggesting he'd never agree with players
+                    kneeling during the national anthem.</p>
+            </div>
+            <div class="col-md-3 editor-items">
+                <img src="editor-5.PNG" class="img-fluid">
+                <h5>George Floyd Died of Heart Attack Complicated by Neck Compression</h5>
+                <p>In layman's terms, the medical examiner said George Floyd died from a sudden failure in his heart's
+                    ability to pump blood to his brain due to the stress put on his body by the arresting officer
+                    pressing upon his neck.</p>
+            </div>
+            <div class="col-md-3 editor-items">
+                <img src="editor-6.PNG" class="img-fluid">
+                <h5>Pressley, Warren Vow to Fight for Laws Named After Police Brutality Victims</h5>
+                <p>"He's finally getting heard," said Angelique Negroni-Kearse, whose husband, Andrew Kearse, died of a
+                    heart attack in the back of a police car.</p>
+            </div>
+            <div class="col-md-3 editor-items">
+                <img src="editor-7.PNG" class="img-fluid">
+                <h5>Nearly Half of Republicans Now Think U.S. Is on the Wrong Track: Poll</h5>
+                <p>Monmouth University says survey shows the highest number of people unhappy with the U.S's direction
+                    in its seven years of polling.</p>
+            </div>
+            <div class="col-md-3 editor-items">
+                <img src="editor-8.PNG" class="img-fluid">
+                <h5>73 Percent of Repubs, 42 Percent of Dems Feel Okay Voting During Epidemic</h5>
+                <p>The results underscore significant differences in how political affiliations affect people's
+                    individual attitudes towards COVID-19.</p>
+            </div>
+        </div>
+        <div class="sections-us">
+            <h5 class="section-title">U.S.</h5>
+            <div class="row us-section">
+                <div class="col-md-4 us-items">
+                    <img src="us-1.PNG" alt="" class="img-fluid">
+                    <h5>National Guard Kicked Out of DC Hotel Rooms Held for COVID Relief Units</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <img src="us-2.PNG" alt="" class="img-fluid">
+                    <h5>Police Tactics Under New Scrutiny as Violence Rages Across Country</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="us-3.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">NFL Commissioner Says 'We Were Wrong' to Ban On-Field Protests</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="us-4.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">Trump Tells Maine Governor During Remarks: 'Get the State Open,
+                                    Governor'</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right" style="border-bottom: none;">
+                        <div class="col-md-4">
+                            <img src="us-5.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">Derek Chauvin Accused of Voting Fraud in Florida While Living in
+                                    Minnesota</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="section-title pt-4">World</h5>
+            <div class="row us-section">
+                <div class="col-md-4 us-items">
+                    <img src="world-1.PNG" alt="" class="img-fluid">
+                    <h5>Hong Kong Police Allow Thousands to Defy Tiananmen Vigil Ban</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <img src="world-2.PNG" alt="" class="img-fluid">
+                    <h5>U.K. Embassy Raises Issue of Police Conduct in Protests to U.S. Officials</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="world-3.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">Mexico Protester Sets Officer on Fire Amid Outrage Over Death in Custody</a>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="world-4.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    Donald Trump Calls on Iran to 'Make the Big Deal' Before 2020 Election</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right" style="border-bottom: none;">
+                        <div class="col-md-4">
+                            <img src="world-5.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    DPRK Calls U.S. Country of 'Extreme Racists' After George Floyd Protests</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="section-title pt-4">Business</h5>
+            <div class="row us-section">
+                <div class="col-md-4 us-items">
+                    <img src="business-1.PNG" alt="" class="img-fluid">
+                    <h5>Don Jr. Set His Sights on Big Tech Months Before His Father's Twitter Feud</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <img src="business-2.PNG" alt="" class="img-fluid">
+                    <h5>Attention Congress: Why Federal Economic Benefits Are Needed Now More Than Ever |Opinion</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="business-3.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">Trump's Stock Market Gains Once Again Surpass Those of Obama</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="business-4.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    Trump Store Rolls Out 'You Ain't Black' T-shirts Referencing Biden Remark</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right" style="border-bottom: none;">
+                        <div class="col-md-4">
+                            <img src="business-5.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    Trump Organization Lays off 250 Resort Employees Due to Pandemic</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="section-title pt-4">Tech & Science</h5>
+            <div class="row us-section">
+                <div class="col-md-4 us-items">
+                    <img src="tech-1.PNG" alt="" class="img-fluid">
+                    <h5>Fascinating Slow-Motion Video of Single Molecules Captured by Scientists</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <img src="tech-2.PNG" alt="" class="img-fluid">
+                    <h5>Phantom Boats Drawing 'GPS Crop Circles' Appear Off San Francisco Coast</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="tech-3.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">False Bay Great Whites May Not Have Left Because of Killer Whale Attacks</a>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="tech-4.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    How and When to Watch the Strawberry Full Moon Eclipse Online</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right" style="border-bottom: none;">
+                        <div class="col-md-4">
+                            <img src="tech-5.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    K-Pop Fans Flood QAnon Twitter Hashtags to Silence Conspiracy Theorists</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="section-title pt-4">Culture</h5>
+            <div class="row us-section">
+                <div class="col-md-4 us-items">
+                    <img src="cult-1.PNG" alt="" class="img-fluid">
+                    <h5>Tia Morwy Learned About 'Privilege' Seeing Discrimination Against Her Mom</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <img src="cult-2.PNG" alt="" class="img-fluid">
+                    <h5>Magic: The Gathering Gets New and Reissued Planeswalkers In Core Set 2021</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="cult-3.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">The 'RuPaul's Drag Race All Stars 5' major rules shake-up explained</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="cult-4.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    '13 Reasons Why': Everything You Need to Remember Before Season 4 Starts</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right" style="border-bottom: none;">
+                        <div class="col-md-4">
+                            <img src="cult-5.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    Who Is Martin Gugino? 75-Year-old Pushed by Police Is a Longtime Protester</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="section-title pt-4">Sports</h5>
+            <div class="row us-section">
+                <div class="col-md-4 us-items">
+                    <img src="sports-1.PNG" alt="" class="img-fluid">
+                    <h5>WWE 'SmackDown' Results (6/5): Jeff Hardy to Share His Story</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <img src="sports-2.PNG" alt="" class="img-fluid">
+                    <h5>NXT Takeover: In Your House Streaming Details</h5>
+                </div>
+                <div class="col-md-4 us-items">
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="sports-3.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">NBA Standings As 22 Teams to Vie for Playoffs in Season Return</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right">
+                        <div class="col-md-4">
+                            <img src="sports-4.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    The NBA Coronavirus Restart Plan, Dates, Venues and Format Explained</a></h6>
+                        </div>
+                    </div>
+                    <div class="row section-right" style="border-bottom: none;">
+                        <div class="col-md-4">
+                            <img src="sports-5.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h6><a href="#">
+                                    Jake Fromm and Drew Brees 'Aren't Really Sorry,' Says Jamal Adams</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-subscribe">
+            <div class="row subscribe-items">
+                <div class="col-md-7 subscribe">
+                    <h6 style="color: red;"><b>SUBSCRIBE</b></h6>
+                    <div class="row subscribe-sub-items">
+                        <div class="col-md-4">
+                            <img src="subscribe-left.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 p-3">
+                            <h5><b>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</b></h5>
+                            <p>All Access + Weekly Delivery.</p>
+                            <p style="line-height: 0;">Choose A Membership That's Perfect for You!</p>
+                            <button class="subscribe-button">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 newsletter">
+                    <h6 style="color: red;"><b>NEWSLETTER</b></h6>
+                    <div class="row newsletter-sub-items">
+                        <div class="col-md-3 p-0">
+                            <img src="newsletter.PNG" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-9 news-sub">
+                            <h5><b>The Starting 5</b></h5>
+                            <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.
+                            </p>
+                            <input type="email" placeholder="Email address" style="width:130px;">
+                            <button class="signup">FREE SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-footer d-flex justify-content-between align-items-center mt-3 pt-4 pb-2">
+            <div class="footer-left d-flex align-items-start">
+                <span>
+                    <h1 style="color: red;line-height: 0;padding-right: 10px;"><b>Newsweek</b></h1>
+                </span>
+                <span>© 2020 NEWSWEEK</span>
+            </div>
+            <div class="footer-right d-flex">
+                <i class="fab fa-facebook-square mr-2" aria-hidden="true" style="color: grey;font-size: 25px;"></i>
+                <i class="fab fa-twitter mr-2" aria-hidden="true" style="color: grey;font-size: 25px;"></i>
+                <i class="fab fa-instagram mr-2" aria-hidden="true" style="color: grey;font-size: 25px;"></i>
+                <i class="fab fa-tumblr mr-2" aria-hidden="true" style="color: grey;font-size: 25px;"></i>
+                <i class="fab fa-linkedin mr-2" aria-hidden="true" style="color: grey;font-size: 25px;"></i>
+            </div>
+        </div>
+        <div class="editions pt-2">
+            <span class="d-flex align-items-center">
+                <p><b>Editions: </b></p>
+                <ul class="language-list">
+                    <li>
+                        <p>U.S. Edition</p>
+                    </li>
+                    <li>
+                        <p>日本</p>
+                    </li>
+                    <li>
+                        <p>Pakistan</p>
+                    </li>
+                    <li>
+                        <p>Polska</p>
+                    </li>
+                    <li>
+                        <p>România</p>
+                    </li>
+                </ul>
+            </span>
+            <span class="d-flex">
+                <ul class="language-list d-flex flex-wrap">
+                    <li style="padding-left: 0;">
+                        <p>About Us</p>
+                    </li>
+                    <li>
+                        <p>Corrections</p>
+                    </li>
+                    <li>
+                        <p>Contact Us</p>
+                    </li>
+                    <li>
+                        <p>Editorial Guidelines</p>
+                    </li>
+                    <li>
+                        <p>Advertise</p>
+                    </li>
+                    <li>
+                        <p>CopyRight</p>
+                    </li>
+                    <li>
+                        <p>Terms & Conditions</p>
+                    </li>
+                    <li>
+                        <p>Privacy Policy</p>
+                    </li>
+                    <li>
+                        <p>Cookie Policy</p>
+                    </li>
+                    <li>
+                        <p>Terms of Sale</p>
+                    </li>
+                    <li>
+                        <p>Archive</p>
+                    </li>
+                    <li>
+                        <p>Announcements</p>
+                    </li>
+                    <li>
+                        <p>
+                            Consent preferences</p>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

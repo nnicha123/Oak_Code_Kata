@@ -1,0 +1,233 @@
+.topics{
+    list-style-type: none;
+    display: flex;
+    background-color: rgb(233, 231, 231);
+    box-sizing: border-box;
+}
+.topics li{
+    padding: 0px 5px 0 0;
+    margin: 5px 5px;
+    margin-left: 0;
+    border-right: 1px solid rgb(221, 216, 216);
+    font-size: 15px;
+}
+.content-card{
+    margin: 10px;
+    height: max-content;
+}
+.content-card > * {
+    padding: 10px;
+}
+.content-card img{
+    width: 100%;
+    margin: 0 auto;
+}
+.story-item{
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+p{
+    font-size: 13px;
+}
+
+.debate-wrapper{
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(0, 119, 255);
+}
+.debate-wrapper h5{
+    border-bottom: 3px solid red;
+}
+.vs{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.vs::before{
+    content: "";
+    height: 3px;
+    width: 130px;
+    border: 0.2px solid black;
+    position: absolute;
+    right: 30px;
+}
+.vs::after{
+    content: "";
+    height: 3px;
+    width: 130px;
+    border: 0.2px solid black;
+    position: absolute;
+    left: 30px;
+}
+.opinion-item{
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+.content-card h5{
+    margin-bottom: 0;
+}
+.sponsor-item{
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 1px solid rgb(221, 216, 216);
+}
+.sponsor-item h5{
+    margin-top: 15px;
+}
+.content-left{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    width: auto;
+    height: max-content;
+    top: 0px
+}
+.content-middle{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    width: auto;
+    padding-bottom: 50px;
+    height: max-content;
+    top: 0px;
+}
+.content-right{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0px;
+    width: auto;
+    height: max-content;
+}
+.logo{
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+.sub-left{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.sub-right{
+    color: red;
+    font-weight: bold;
+}
+.editor-items h5{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.editor{
+    border-bottom: 1px solid rgb(221, 216, 216);
+    margin-bottom: 10px;
+}
+.section-right{
+    padding: 5px;
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+.section-right a{
+    text-decoration: none;
+    color: black;
+}
+.us-section{
+    border-bottom: 1px solid  rgb(221, 216, 216);
+    padding-bottom: 20px;
+}
+.section-title{
+    color: red;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.us-items h5{
+    padding-top: 20px;
+}
+.section-subscribe{
+    margin-top: 20px;
+}
+.subscribe-sub-items{
+    margin: 10px 10px 10px 0;
+    padding: 01rem;
+    background-color: rgb(221, 216, 216);
+}
+.newsletter-sub-items{
+    border: 1px solid rgb(221, 216, 216);
+    padding: 0.7rem;
+    margin: 10px 10px 10px 0;
+}
+.news-sub{
+    width: 100%;
+    padding: 25px;
+}
+.signup,.subscribe-button{
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.section-footer{
+    border-top: 1px solid rgb(221, 216, 216);
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+.language-list{
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.language-list li p{
+    margin-bottom: 0;
+}
+.language-list li{
+    padding: 0 10px;
+    margin: 5px;
+    border-right: 1px solid rgb(221, 216, 216);
+}
+.see-features{
+    border: none;
+    background-color: rgb(248, 248, 248);
+    font-weight: bold;
+}
+.see-features:hover{
+    background-color: rgb(182, 180, 180);
+    cursor: pointer;
+}
+.header{
+    position: relative;
+}
+
+@media screen and (max-width:990px){
+    .hamburger{
+        position: absolute;
+        top:30px;
+        right: 220px;
+        cursor: pointer;
+    }
+    .line{
+        height: 3px;
+        width: 30px;
+        margin: 5px;
+        background: white;
+    }
+
+    .topics-close{
+        display: none;
+    }
+    
+    .topics{
+       flex-direction: column;
+       align-items: flex-end;
+       width: max-content;
+       position: fixed;
+       margin-right: auto;
+       z-index: 2;
+       position: absolute;
+       right:0;
+    }
+    .topics li{
+        border: none;
+    }
+    .topics li:hover{
+        background: grey;
+        cursor: pointer;
+    }
+}
