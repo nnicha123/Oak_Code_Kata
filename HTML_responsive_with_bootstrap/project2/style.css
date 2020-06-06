@@ -138,3 +138,25 @@ p{
 .us-items h5{
     padding-top: 20px;
 }
+.section-subscribe{
+    margin-top: 20px;
+}
+.subscribe-sub-items{
+    margin: 10px 10px 10px 0;
+    padding: 25px;
+    background-color: rgb(218, 218, 218);
+}
+.newsletter-sub-items{
+    border: 1px solid rgb(218, 218, 218);
+    margin: 10px 10px 10px 0;
+}
+.news-sub{
+    width: 100%;
+    padding: 25px;
+}
+.signup,.subscribe-button{
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+}
