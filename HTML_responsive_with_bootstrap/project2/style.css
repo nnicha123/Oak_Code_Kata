@@ -8,7 +8,7 @@
     padding: 0px 5px 0 0;
     margin: 5px 5px;
     margin-left: 0;
-    border-right: 1px solid grey;
+    border-right: 1px solid rgb(221, 216, 216);
     font-size: 15px;
 }
 .content-card{
@@ -23,7 +23,7 @@
     margin: 0 auto;
 }
 .story-item{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(221, 216, 216);
 }
 p{
     font-size: 13px;
@@ -67,7 +67,7 @@ p{
 }
 .opinion-item{
     margin-top: 20px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(221, 216, 216);
 }
 .content-card h5{
     margin-bottom: 0;
@@ -75,7 +75,7 @@ p{
 .sponsor-item{
     margin-bottom: 25px;
     padding: 10px;
-    border: 1px solid rgb(194, 188, 188);
+    border: 1px solid rgb(221, 216, 216);
 }
 .sponsor-item h5{
     margin-top: 15px;
@@ -84,14 +84,15 @@ p{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     width: auto;
-    height: 4150px;
+    height: max-content;
     top: 0px
 }
 .content-middle{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     width: auto;
-    height: 3200px;
+    padding-bottom: 50px;
+    height: max-content;
     top: 0px;
 }
 .content-right{
@@ -99,10 +100,10 @@ p{
     position: sticky;
     top: 0px;
     width: auto;
-    height: 3450px;
+    height: max-content;
 }
 .logo{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(221, 216, 216);
 }
 .sub-left{
     background-color: red;
@@ -118,19 +119,20 @@ p{
     margin-bottom: 10px;
 }
 .editor{
-    border-bottom: 1px solid rgb(184, 184, 184);
+    border-bottom: 1px solid rgb(221, 216, 216);
     margin-bottom: 10px;
 }
 .section-right{
     padding: 5px;
-    border-bottom: 1px solid rgb(189, 184, 184);
+    border-bottom: 1px solid rgb(221, 216, 216);
 }
 .section-right a{
     text-decoration: none;
     color: black;
 }
 .us-section{
-    border-bottom: 1px solid  rgb(189, 184, 184);
+    border-bottom: 1px solid  rgb(221, 216, 216);
+    padding-bottom: 20px;
 }
 .section-title{
     color: red;
@@ -146,10 +148,10 @@ p{
 .subscribe-sub-items{
     margin: 10px 10px 10px 0;
     padding: 01rem;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(221, 216, 216);
 }
 .newsletter-sub-items{
-    border: 1px solid rgb(218, 218, 218);
+    border: 1px solid rgb(221, 216, 216);
     padding: 0.7rem;
     margin: 10px 10px 10px 0;
 }
@@ -164,8 +166,8 @@ p{
     border: none;
 }
 .section-footer{
-    border-top: 1px solid rgb(228, 225, 225);
-    border-bottom: 1px solid rgb(228, 225, 225);
+    border-top: 1px solid rgb(221, 216, 216);
+    border-bottom: 1px solid rgb(221, 216, 216);
 }
 .language-list{
     display: flex;
@@ -178,5 +180,5 @@ p{
 .language-list li{
     padding: 0 10px;
     margin: 5px;
-    border-right: 1px solid grey;
+    border-right: 1px solid rgb(221, 216, 216);
 }
