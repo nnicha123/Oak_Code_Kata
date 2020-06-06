@@ -130,3 +130,11 @@ p{
 .us-section{
     border-bottom: 1px solid  rgb(189, 184, 184);
 }
+.section-title{
+    color: red;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.us-items h5{
+    padding-top: 20px;
+}
