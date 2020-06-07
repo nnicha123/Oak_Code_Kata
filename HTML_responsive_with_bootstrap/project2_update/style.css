@@ -194,6 +194,14 @@ p{
 .header{
     position: relative;
 }
+.newHeader{
+    display: none;
+}
+.section-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media screen and (max-width:990px){
     .hamburger{
@@ -230,4 +238,34 @@ p{
         background: grey;
         cursor: pointer;
     }
+    .language-list li{
+        border: none;
+        padding: 0;
+    }
+}
+@media screen and (max-width:768px){
+    .content-left,.content-right,.content-middle{
+        position: relative;
+    }
+    .city,.fa-sun-o,.date{
+        display: none;
+    }
+    .newHeader{
+        font-size: 25px;
+        display: inline;
+    }
+    .head-middle h1{
+        display: none;
+    }
+    .hamburger{
+        top: 22px;
+    }
+    .section-footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-right{
+        margin-top: 15px;
+    }
+
 }
