@@ -1,6 +1,10 @@
 .wrapper img{
   height: 200px;
 }
+.wrapper h3{
+  margin-top: 25px;
+  text-align: center;
+}
 .card{
   margin: 10px;
 }
