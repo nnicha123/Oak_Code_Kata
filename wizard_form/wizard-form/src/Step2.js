@@ -1,20 +1,19 @@
 import React from 'react';
 
 export default function Step1(props){
-    if(props.currentStep !== 1){
+    if(props.currentStep !== 2){
         return null;
     }
     return(
         <div className="form-group">
-            <label htmlFor="email">Email Address</label>
-            qefwg
+            <label htmlFor="username">Username</label>
             <input
             className="form-control"
-            id="email"
-            name="email"
+            id="username"
+            name="username"
             type="text"
-            placeholder="Enter email"
-            value={props.email}
+            placeholder="Enter username"
+            value={props.username}
             onChange={props.handleChange}
             />
         </div>

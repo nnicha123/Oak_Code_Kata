@@ -7,7 +7,6 @@ export default function Step1(props){
     return(
         <div className="form-group">
             <label htmlFor="email">Email Address</label>
-            qefwg
             <input
             className="form-control"
             id="email"

@@ -66,27 +66,29 @@ class MasterForm extends React.Component {
     }
     render() {
         return (
-            <React.Fragment>
+            <div style={{display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'column'}}>
                 <h1>A Wizard Form!</h1>
-                <p>Step {this.state.currentStep}</p>
+                <div className="outerForm">
+                    <p>Step {this.state.currentStep}</p>
 
-                <form onSubmit={this.handleSubmit}>
-                    <Step1
-                        currentStep={this.state.currentStep}
-                        handleChange={this.handleChange}
-                        email={this.state.email} />
-                    <Step2
-                        currentStep={this.state.currentStep}
-                        handleChange={this.handleChange}
-                        email={this.state.email} />
-                    <Step3
-                        currentStep={this.state.currentStep}
-                        handleChange={this.handleChange}
-                        email={this.state.email} />
+                    <form onSubmit={this.handleSubmit}>
+                        <Step1
+                            currentStep={this.state.currentStep}
+                            handleChange={this.handleChange}
+                            email={this.state.email} />
+                        <Step2
+                            currentStep={this.state.currentStep}
+                            handleChange={this.handleChange}
+                            username={this.state.username} />
+                        <Step3
+                            currentStep={this.state.currentStep}
+                            handleChange={this.handleChange}
+                            password={this.state.password} />
                         {this.previousButton()}
                         {this.nextButton()}
-                </form>
-            </React.Fragment>
+                    </form>
+                </div>
+            </div>
         )
     }
 }
