@@ -1,0 +1,49 @@
+header {
+  height: 15vh;
+  background-color: #3b3636;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+form {
+  background-color: #deb887;
+  min-height: 85vh;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.inputGroup input {
+  height: 25px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.radioGroup {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.destination,
+.restrictions {
+  margin-top: 20px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.enteredInfo {
+  background-color: #1e5555;
+  min-height: 50vh;
+  color: white;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.enteredInfo h2 {
+  padding-top: 20px;
+}
