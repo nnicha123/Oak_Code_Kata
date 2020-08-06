@@ -25,7 +25,7 @@ function SearchForm() {
         </div>
         <button className="searchButton" type="button" onClick={() => getUser(username)}>Find User</button>
       </form>
-      <Profile user={user} />
+      <Profile user={user} username={username} />
     </div>
   )
 }

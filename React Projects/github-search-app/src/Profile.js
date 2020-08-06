@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import './Profile.css'
 
 function Profile(props) {
-
+  const navigateToPage = (username) => {
+    window.open(`https://github.com/${username}`, '_blank')
+  }
   const checkValidUser = (props) => {
     if (props.user.login) {
       return (
-        <div className="profileCard">
+        <div className="profileCard" onClick={() => navigateToPage(props.username)}>
           <div className="cardTop">
             <img src={props.user.avatar_url} />
             <div className="username">Username : {props.user.login}</div>
