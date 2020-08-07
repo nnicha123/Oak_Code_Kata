@@ -7,9 +7,16 @@ export class FormContainer extends Component {
     age: '',
     gender: '',
     destination: '',
-    nutsFree: '',
-    lactoseFree: '',
-    vegan: ''
+    nutsFree: false,
+    lactoseFree: false,
+    isVegan: false
+  }
+  genderChange(e) {
+    this.setState({ gender: e.target.value })
+  }
+  handleCheck = (checked, name) => {
+    this.setState({ [name]: checked })
+
   }
   render() {
     return (
@@ -22,21 +29,28 @@ export class FormContainer extends Component {
             <input type="text" value={this.state.age} onChange={(e) => this.setState({ age: e.target.value })} placeholder="Age" />
           </div>
           <div className="radioGroup">
-            <label><input class="radiobutton" type="radio" name="gender" value="male" />Male</label>
-            <label><input class="radiobutton" type="radio" name="gender" value="female" />Female</label>
+            <label><input class="radiobutton" type="radio" name="gender" value="Male" checked={this.state.gender === 'Male'}
+              onChange={(e) => this.genderChange(e)} />Male</label>
+            <label><input class="radiobutton" type="radio" name="gender" value="Female" checked={this.state.gender === 'Female'}
+              onChange={(e) => this.genderChange(e)} />Female</label>
           </div>
           <div className="destination">
             <div><b>Select your destination</b></div>
-            <select class="destination-input" name="destination"><option value="">-- Please Choose a destination --</option><option value="Thailand">Thailand</option><option value="Japan">Japan</option><option value="Brazil">Brazil</option></select>
+            <select class="destination-input" name="destination" onChange={(e) => this.setState({ destination: e.target.value })}>
+              <option value="">-- Please Choose a destination --</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Japan">Japan</option>
+              <option value="Brazil">Brazil</option>
+            </select>
           </div>
 
           <div class="restrictions">
             <div><b>Dietary restrictions:</b></div>
-            <input type="checkbox" name="nutsFree" /><span>Nuts free</span>
+            <input type="checkbox" name="nutsFree" onChange={(e) => this.handleCheck(e.target.checked, "nutsFree")} /><span>Nuts free</span>
             <br />
-            <input type="checkbox" name="lactoseFree" /><span>Lactose free</span>
+            <input type="checkbox" name="lactoseFree" onChange={(e) => this.handleCheck(e.target.checked, "lactoseFree")} /><span>Lactose free</span>
             <br />
-            <input type="checkbox" name="isVegan" /><span>Vegan</span>
+            <input type="checkbox" name="isVegan" onChange={(e) => this.handleCheck(e.target.checked, "isVegan")} /><span>Vegan</span>
           </div>
           <button>Submit</button>
         </form>
@@ -45,15 +59,15 @@ export class FormContainer extends Component {
           <h2>Entered Information:</h2>
           <p>Your name: {this.state.firstName} {this.state.lastName}</p>
           <p>Your age: {this.state.age}</p>
-          <p>Your gender: </p>
-          <p>Your destination:</p>
-          <p>Your dietary restrictions:</p>
+          <p>Your gender: {this.state.gender}</p>
+          <p>Your destination: {this.state.destination}</p>
+          <p>Your dietary restrictions: </p>
           <div>
-            **Nuts free :
+            **Nuts free : {this.state.nutsFree ? 'Yes' : 'No'}
             <br />
-            **Lactose free :
+            **Lactose free : {this.state.lactoseFree ? 'Yes' : 'No'}
             <br />
-            **Vegan meal :
+            **Vegan meal : {this.state.isVegan ? 'Yes' : 'No'}
           </div>
         </div>
       </div >
