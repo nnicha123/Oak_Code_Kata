@@ -19,8 +19,8 @@ export class SearchList extends Component {
   render() {
     return (
       <div className="Container">
-        <div className="Options">
-          <div className="group">
+        <div className="Options" style={{ marginTop: '20px' }}>
+          <div className="group" >
             <label>Choose a cuisine: </label>
             <select id="restfilter" onChange={(e) => this.setState({ cuisineOption: e.target.value })}><option value="any">Choose Any</option><option value="French">French</option><option value="Dutch">Dutch</option><option value="Europea">Europea</option><option value="European">European</option><option value="Vegetarian Friendly">Vegetarian Friendly</option><option value="Gluten Free Option">Gluten Free Option</option><option value="Mediterranean">Mediterranean</option><option value="International">International</option><option value="Vegan Option">Vegan Option</option><option value="Contemporary">Contemporary</option><option value="Vegan Options">Vegan Options</option><option value="Asian">Asian</option><option value="Indonesian">Indonesian</option><option value="Japanese">Japanese</option><option value="Seafood">Seafood</option><option value="Fast Foo">Fast Foo</option><option value="American">American</option><option value="Bar">Bar</option><option value="Central European">Central European</option><option value="Pu">Pu</option><option value="Cafe">Cafe</option><option value="British">British</option><option value="Healthy">Healthy</option><option value="Indian">Indian</option><option value="Tibetan">Tibetan</option><option value="Nepali">Nepali</option><option value="Italian">Italian</option><option value="Vegetarian Friendl">Vegetarian Friendl</option></select>
           </div>
