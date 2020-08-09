@@ -1,0 +1,60 @@
+SELECT * FROM orders 
+INNER JOIN salesman
+ON salesman.salesman_id = orders.salesman_id;
+
+SELECT ord_no,purch_amt,ord_date,customer_id,salesman_id FROM orders
+LEFT JOIN salesman
+ON salesman.salesman_id = orders.salesman_id
+WHERE salesman.city='London'; 
+
+SELECT ord_no,purch_amt,ord_date,customer_id,salesman_id FROM orders
+LEFT JOIN salesman
+ON salesman.salesman_id = orders.salesman_id
+WHERE customer_id = 3007;
+
+SELECT * FROM orders
+WHERE purch_amt > (SELECT AVG(purch_amt) FROM orders WHERE ord_date='2012-10-10');
+
+SELECT * FROM orders
+WHERE salesman_id IN (SELECT salesman_id FROM salesman WHERE city='New york');
+
+SELECT * FROM orders
+WHERE salesman_id IN (SELECT salesman_id FROM salesman WHERE city='Paris');
+
+SELECT * FROM customer
+WHERE customer_id IN (SELECT salesman_id-2001 FROM salesman WHERE name='Mc Lyon')
+
+SELECT grade,COUNT(*) FROM customer
+WHERE grade > (SELECT AVG(grade) FROM customer WHERE city='New York')
+GROUP BY grade;
+
+SELECT * FROM orders
+WHERE salesman_id IN (SELECT salesman_id FROM salesman WHERE commission = (SELECT MAX(commission) FROM salesman))
+
+SELECT * FROM customer 
+WHERE customer_id IN (SELECT customer_id FROM orders WHERE ord_date='2012-08-17');
+
+SELECT salesman_id,name 
+FROM salesman a 
+WHERE 1 < 
+    (SELECT COUNT(*) 
+     FROM customer 
+     WHERE salesman_id=a.salesman_id);
+
+SELECT * FROM orders
+WHERE purch_amt > (SELECT AVG(purch_amt) FROM orders WHERE customer.customer_id=orders.customer_id)
+
+SELECT * FROM orders
+WHERE purch_amt >= (SELECT AVG(purch_amt) FROM orders WHERE customer.customer_id=orders.customer_id)
+
+SELECT SUM(purch_amt) FROM orders a
+GROUP BY ord_date;
+HAVING SUM(purch_amt) > (SELECT 1000+MAX(purch_amt) FROM orders b WHERE a.ord_date = b.ord_date)
+
+SELECT *
+FROM customer
+WHERE EXISTS
+   (SELECT *
+    FROM customer 
+    WHERE city='London');
+

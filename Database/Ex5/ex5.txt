@@ -1,0 +1,35 @@
+SELECT customer.cust_name,salesman.name,salesman.city FROM salesman,customer WHERE salesman.city = customer.city;
+SELECT customer.cust_name, salesman.name FROM customer,salesman WHERE customer.salesman_id = salesman.salesman_id;
+
+SELECT orders.ord_no, customer.cust_name,orders.customer_id,orders.salesman_id
+FROM salesman,customer,orders
+WHERE customer.city <> salesman.city
+AND orders.customer_id = customer.customer_id
+AND orders.salesman_id = salesmen.salesman_id;
+
+SELECT orders.ord_no, customer.cust_name
+FROM orders,customer
+WHERE orders.customer_id = customer.customer_id;
+
+SELECT customer.cust_name,customer.grade
+FROM orders,customer,salesman
+WHERE orders.customer_id = customer_id.customer_id
+AND orders.salesman_id = salesman.salesman_id
+AND customer.grade IS NOT NULL
+AND salesman.city IS NOT NULL;
+
+SELECT customer.cust_name,customer.city,salesman.name,salesman.commission
+FROM customer,salesman
+WHERE customer.salesman_id = salesman.salesman_id
+AND salesman.commission BETWEEN .12 AND .14;
+
+SELECT orders.ord_no,customer.cust_name,salesman.commission,purch_amt*commission
+FROM orders,customer,salesman
+WHERE orders.customer_id = customer.customer_id
+AND orders.salesman_id = salesman.salesman_id
+AND customer.grade >= 200;
+
+SELECT customer.cust_name.orders.ord_date
+FROM customer,orders
+WHERE orders.customer_id = customer.customer_id
+AND orders.ord_date='2012-10-05';
